@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blacksheep</title>
+
+        <style>
+            button {
+            background-color: none;
+            border: none;
+            color: teal;
+            padding: 7px 10px;
+            text-align: center;
+            text-decoration:skyblue;
+            display: inline-block;
+            font-size: 20px;
+        }
+        </style>
+    </head>
+    <body style="background-color:azure;">
+        <style>
+            div.mycontainer1
+            {
+                width:100%;
+                overflow:auto;
+            }
+            div.mycontainer1 div
+            {
+            width:30%;
+            float:left;
+            }
+            div.mycontainer1 div {padding:25px}
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                }
+            </style>
+        <div class="mycontainer1">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnand-aaRtpxUU2GC1Xrr6Uk8oVNhYZoXTrA&usqp=CAU" alt="XYZ Education Trust" width="150" height="150" class="topper">
+            </div>
+            <div>
+                <p><h1 style="color:blue;font-weight: 100; font-style: italic; text-align: center;"> XYZ EDUCATION TRUST's </h1>
+                    <h2 style="color:blue; font-weight:200; font-size:40px; text-align: center;"> XYZ College Of Engineering </h2>
+                </p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnand-aaRtpxUU2GC1Xrr6Uk8oVNhYZoXTrA&usqp=CAU" alt="XYZ Education Trust" width="150" height="150">
+            </div>
+        </div>
+        <h3 style="font-style:italic; text-align: center;"> NBA Accredited | NAAC Accredited with 'A' Grade | An Autonomous Institute | AICTE Approved | ISO 9001: 2015 Certified | Permanently Affiliated to SPPU, Pune </h3>
+        <div id="menu-button" style="width: 100%;">`
+            <div style="background-color:rgb(241, 233, 233) ;font-size:25px;color:teal; padding:15px; display:flex ; justify-content:space-around;">
+                <button>Menu</button>
+                <button>AboutUs</button>
+                <button>Governance</button>
+                <button>Deans</button>
+                <button>Departments</button>
+                <button>Admissions</button>
+                <button>Placements</button>
+                <button>Exam Cell</button>
+                <button>Students Corner</button>
+                <button>Awards</button>
+                <button>ERP</button>
+                <button>Contact Us</button>
+            </div>
+        </div>
+
+<style>
+div.mycontainer
+{
+	width:100%;
+	overflow:auto;
+}
+div.mycontainer div
+{
+width:30%;
+float:left;
+}
+div.mycontainer div {padding:25px}
+</style>
+<div class="mycontainer">
+
+    <div style="border-color:aquamarine;border-radius:10px;">
+        <h2 style="color:darkslategrey;text-align:center;"> About XYZ Trust </h2>
+        <p> XYZ Trust (XYZT) was established by Late Shri. S. Y. Patil in the year 1990 with a vision
+            to provide value added educational platform to society in multiple dimensions right from Nursery to Doctoral programs
+            in all professional streams enabling all our students to achieve Freedom through Education.. XYZT has seven institutes
+            Currently XYZCoE is one of the best engineering colleges in Pune.
+        </p>
+    </div>
+
+    <div>
+        <h2 style="color:darkslategrey;text-align:center;"> About College </h2>
+        <p> XYZ College of Engineering (XYZCoE) is one of the best engineering colleges in Pune, established in 1999,
+        nurtured and managed by XYZ Trust(XYZT).
+
+        XYZCoE is functioning proactively to provide the best professional environment to engineering and management students
+        in terms of academics, industry oriented trainings, sports, co-curricular & extracurricular activities, cultural
+        activities, various competitions, etc to create true aesthetically sensitive, socially committed and technologically
+        competent engineers and management professionals.
+        </p>
+        <p>Academics at XYZCoE is disciplined with results at the par of best colleges in Savitribai Phule Pune University (SPPU).
+        Students of XYZCoE are proving their talents at state and national level competitions for technical and non technical
+        events. Along with results XYZCoE has excellent placements.</p>
+    </div>
+
+    <div>
+        <h2 style="color:darkslategrey;text-align:center;"> Vision & Mission </h2>
+        <p>To be one of the top 100 Engineering Institutes of India in coming five years by offering exemplarily Ethical,
+        Sustainable and Value Added Quality Education through a matching ecosystem for building successful careers.</p>
+        <p>1. Serving the needs of the society at large through establishment of a state-of-art Engineering Institute
+
+            2. Imparting right Attitude, Skills, Knowledge for self-sustenance through Quality Education
+
+            3. Creating globally competent and Sensible engineers, researchers and entrepreneurs with an ability to think and act
+            independently in demanding situations</p>
+    </div>
+
+
+</div>
+<style>
+    div.container1
+    {
+        width:100%;
+        overflow:auto;
+    }
+    div.container1 div
+    {
+    width:13%;
+    float:left;
+    }
+    div.container1 div {padding:25px}
+    </style>
+
+<div class="container1">
+    <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ6-zIbGM45rz385QuVuN-AWM_P2VmCBZr9Q&usqp=CAU" alt="infrastructure"  width="175px" height="150px">
+        <h1 style="text-align: center;font-size: 20px; font-weight:100;">Infrastructure</h1>
+        </div>
+    <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxTPakXCfciuXGHX6Ux2zPxuHFSLz8F5x78Dy2vj7V9H_vQFVLBbZcb0XopmlmYfQMrOg&usqp=CAU" alt="Campus Life" width="175px" height="150px">
+        <h1 style="text-align: center;font-size: 20px; font-weight:100;">Campus Life</h1>
+    </div>
+    <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7S5dnUe9rzNJnqxE85YZNNbUNBeYr9eQHQ&s" alt="Awards" width="175px" height="150px">
+        <h1 style="text-align: center;font-size: 20px; font-weight:100;">Awards</h1>
+    </div>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeaMqi8uGZgC1xErPX-YBNvH4AkqhON7BlbA&s" alt="Downloads" width="175px" height="150px">
+        <h1 style="text-align: center;font-size: 20px; font-weight:100;">Downloads</h1>
+    </div>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdbtQ3NmbsByO8j4-IfIc5xzRYAGLVqtT_Pw&s" alt="Newswire" width="175px" height="150px">
+        <h1 style="text-align: center;font-size: 20px; font-weight:100;">Newswire</h1>
+    </div>
+    <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI8hxicTnYxLB0zoct5iM-DJU4HZ6XX4iH5A&s" alt="Samvaad" width="175px" height="150px">
+        <h1 style="text-align: center;font-size: 20px; font-weight:100;">Samvaad</h1>
+    </div>
+</div>
+
+
+<ul type="circle">
+    <li style="color:cornflowerblue; font-size:35px;"> Applied Science & Humanities.</li>
+    <li style="color:cornflowerblue; font-size:35px;">Mechanical Engineering</li>
+    <li style="color:cornflowerblue; font-size:35px;">Electronics and Telecommunication Engineering</li>
+    <li style="color:cornflowerblue; font-size:35px;">Computer Engineering</li>
+    <li style="color:cornflowerblue; font-size:35px;">Information Technology Engineering</li>
+    <li style="color:cornflowerblue; font-size:35px;">Civil Engineering</li>
+
+</ul>
+
+</body>
+</html>
