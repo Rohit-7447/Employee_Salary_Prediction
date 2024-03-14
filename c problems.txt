@@ -708,3 +708,131 @@ int i,n;
 	
 return 0;
 }
+
+
+
+// program to add of two numbers, identify even or odd, swap two numbers using function//
+#include <stdio.h>
+int main() {
+    
+    add();
+    ide();
+    swap();
+    
+    return 0;
+}
+int add();
+int add(){
+     int a,b;
+    printf("Enter value of two numbers \n");
+    scanf("%d %d",&a,&b);
+    printf("The sum is %d\n",a+b);
+}
+
+int ide(){
+    int n;
+    printf("Enter any number ");
+    scanf("%d",&n);
+    if(n%2==0)
+    printf("Given number is even\n");
+    else
+    printf("Given number is odd\n");
+}
+
+int swap();
+int swap(){
+    int x,y,temp;
+    printf("Enter value of x and y=\n");
+    scanf("%d %d",&x,&y);
+    printf("Numbers before swapping x:%d  y:%d\n",x,y);
+    temp=x;
+    x=y;
+    y=temp;
+    printf("Numbers after swapping x:%d  y:%d",x,y);
+}
+
+
+
+//Program to add two no, identify even or odd, swaping of two numbers using functions call by value//
+#include <stdio.h>
+int main() {
+    int a,b;
+    add(a,b);
+    ide(a);
+    swap(a,b);
+    return 0;
+}
+
+int add(int x,int y);
+int add(int x,int y){
+    int z;
+    printf("Enter value of two numbers \n");
+    scanf("%d %d",&x,&y);
+    z=x+y;
+    printf("Sum of two numbers is %d\n",z);
+}
+
+int ide(int x);
+int ide(int x){
+    printf("Enter any number \n");
+    scanf("%d",&x);
+    if(x%2==0)
+    printf("Given number is even \n");
+    else
+    printf("Given number is odd \n");
+}
+
+int swap(int x,int y);
+int swap(int x,int y){
+    int temp;
+    printf("Enter value of x and y=\n");
+    scanf("%d %d",&x,&y);
+    printf("Numbers before swapping x:%d  y:%d\n",x,y);
+    temp=x;
+    x=y;
+    y=temp;
+    printf("Numbers after swapping x:%d  y:%d\n",x,y);
+}
+
+
+
+// program to add of two numbers, identify even or odd, swap two numbers using function call inside a function//
+#include <stdio.h>
+int main() {
+    printf("Now we are going to see how to perform functions inside functions\n");
+    add();
+    
+
+    return 0;
+}
+int add();
+int add(){
+    int a,b;
+    printf("Enter value of two numbers \n");
+    scanf("%d %d",&a,&b);
+    printf("The sum is %d\n",a+b);
+    swap();
+}
+
+int ide(){
+    int n;
+    printf("Enter any number ");
+    scanf("%d",&n);
+    if(n%2==0)
+    printf("Given number is even\n");
+    else
+    printf("Given number is odd\n");
+}
+
+int swap();
+int swap(){
+    int x,y,temp;
+    printf("Enter value of x and y=\n");
+    scanf("%d %d",&x,&y);
+    printf("Numbers before swapping x:%d  y:%d\n",x,y);
+    temp=x;
+    x=y;
+    y=temp;
+    printf("Numbers after swapping x:%d  y:%d\n",x,y);
+    ide();
+}
