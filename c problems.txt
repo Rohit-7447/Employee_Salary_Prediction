@@ -836,3 +836,111 @@ int swap(){
     printf("Numbers after swapping x:%d  y:%d\n",x,y);
     ide();
 }
+
+
+#include<stdio.h>
+struct customer{
+	char name[50];
+	int acc_no;
+	long int balance;
+	char int_avail[10];
+	int post_pin;
+}s[];
+
+int main(){
+int i,n;
+	printf("Enter the no of the customers: ");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++)
+	{
+		printf("Please enter your name: ");
+		scanf("%s",&s[i].name);
+		printf("Please enter your acc.no: ");
+		scanf("%d",&s[i].acc_no);
+		printf("Enter your bank balance: ");
+		scanf("%ld",&s[i].balance);
+		printf("Enter your postal pin code: ");
+		scanf("%d",&s[i].post_pin);
+		printf("Do you have internet avail facility: (y/n) :");
+		scanf("%s",&s[i].int_avail);
+	}
+	
+	
+	printf("The golden customers of the bank are:\n");
+	for(i=0;i<n;i++)
+	{
+	if(s[i].balance>=1000000){
+		printf("%s\n",s[i].name);}
+	}
+	
+	printf("The Silver customers of the bank are:\n");
+	for(i=0;i<n;i++)
+	{
+	if(s[i].balance<1000000&&s[i].balance>=500000){
+		printf("%s\n",s[i].name);}
+	}
+	
+	printf("The General customers of the bank are:\n");
+	for(i=0;i<n;i++)
+	{
+	if(s[i].balance<500000){
+		printf("%s\n",s[i].name);}
+	}
+	
+	printf("Valid Geographical location");
+	for(i=0;i<n;i++)
+	{
+	if(411004<s[i].post_pin&&s[i].post_pin<411013){
+		printf("%s\n",s[i].name);}
+	}
+	printf("customers availing int facility");
+	for(i=0;i<n;i++)
+	{
+	if(s[i].int_avail == "y"){
+		printf("%s\n",s[i].name);
+		}
+	}
+	
+	
+return 0;
+}
+
+
+//Program to add two no, identify even or odd, swaping of two numbers using functions call by reference//
+#include <stdio.h>
+int main() {
+    int a,b,c,m,n;
+    printf("Enter value of two numbers \n");
+    scanf("%d %d",&a,&b);
+    add(&a,&b);
+    printf("Enter any number \n");
+    scanf("%d",&c);
+    ide(&c);
+    printf("Enter value of m and n=\n");
+    scanf("%d %d",&m,&n);
+    printf("Numbers before swapping m:%d  n:%d\n",m,n);
+    swap(&m,&n);
+    return 0;
+}
+
+int add(int *x,int *y){
+    int z;
+    z=*x+*y;
+    printf("Sum of two numbers is %d\n",z);
+}
+
+int ide(int *x){
+    if(*x%2==0)
+    printf("Given number is even \n");
+    else
+    printf("Given number is odd \n");
+}
+
+int swap(int *x,int *y){
+    int temp;
+    temp=*x;
+    *x=*y;
+    *y=temp;
+    printf("Numbers after swapping x:%d  y:%d\n",*x,*y);
+}
