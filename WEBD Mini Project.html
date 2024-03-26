@@ -3,9 +3,9 @@
     <head>
         <title>Blacksheep</title>
 
-        <style>
-            button {
-            background-color: none;
+    <style>
+        button {
+            background-color: rgb(241, 233, 233);
             border: none;
             color: teal;
             padding: 7px 10px;
@@ -14,18 +14,120 @@
             display: inline-block;
             font-size: 20px;
         }
-        </style>
-    </head>
-    <body style="background-color:azure;">
-        <style>
-            div.mycontainer1
+        body {
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+        font-size: 50;
+    }
+     
+    /* Styling the area of the slides */
+     
+    #slideshow {
+        overflow: hidden;
+        height: 550px;
+        width: 1128px;
+        padding-top: 15px;
+        
+        margin: 0 auto;
+    }
+     
+    /* Style each of the sides 
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 550px;
+        width: 1128px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(1128px * 4);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 10s ease infinite;
+    }
+     
+    /* Set the background color
+    of each of the slides */
+     
+    .slide:nth-child(1) {
+        background: green;
+    }
+     
+    .slide:nth-child(2) {
+        background: pink;
+    }
+     
+    .slide:nth-child(3) {
+        background: red;
+    }
+     
+    .slide:nth-child(4) {
+        background: yellow;
+    }
+     
+    /* Define the animation 
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for 
+      each of the slides */
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-1128px * 1);
+        }
+        60% {
+            margin-left: calc(-1128px * 2);
+        }
+        80% {
+            margin-left: calc(-1128px * 3);
+        }
+    }
+
+        div.mycontainer
+        {
+            width:100%;
+            overflow:auto;
+            display:flex;
+            justify-content: space-around;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        div.mycontainer div
+        {
+        width:25%;
+        float:left;
+
+        }
+        div.mycontainer div {padding:25px}
+        div.mycontainer {
+            border: 2px dashed black;
+            border-radius: 20px;
+        }
+
+        div.mycontainer1
             {
                 width:100%;
                 overflow:auto;
+                display:flex;
+                justify-content: space-around;
+                padding-top: 15px;
+                padding-bottom: 15px;
             }
             div.mycontainer1 div
             {
-            width:30%;
+            width:29%;
             float:left;
             }
             div.mycontainer1 div {padding:25px}
@@ -34,92 +136,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 }
-            </style>
-        <div class="mycontainer1">
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnand-aaRtpxUU2GC1Xrr6Uk8oVNhYZoXTrA&usqp=CAU" alt="XYZ Education Trust" width="150" height="150" class="topper">
-            </div>
-            <div>
-                <p><h1 style="color:blue;font-weight: 100; font-style: italic; text-align: center;"> XYZ EDUCATION TRUST's </h1>
-                    <h2 style="color:blue; font-weight:200; font-size:40px; text-align: center;"> XYZ College Of Engineering </h2>
-                </p>
-            </div>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnand-aaRtpxUU2GC1Xrr6Uk8oVNhYZoXTrA&usqp=CAU" alt="XYZ Education Trust" width="150" height="150">
-            </div>
-        </div>
-        <h3 style="font-style:italic; text-align: center;"> NBA Accredited | NAAC Accredited with 'A' Grade | An Autonomous Institute | AICTE Approved | ISO 9001: 2015 Certified | Permanently Affiliated to SPPU, Pune </h3>
-        <div id="menu-button" style="width: 100%;">`
-            <div style="background-color:rgb(241, 233, 233) ;font-size:25px;color:teal; padding:15px; display:flex ; justify-content:space-around;">
-                <button>Menu</button>
-                <button>AboutUs</button>
-                <button>Governance</button>
-                <button>Deans</button>
-                <button>Departments</button>
-                <button>Admissions</button>
-                <button>Placements</button>
-                <button>Exam Cell</button>
-                <button>Students Corner</button>
-                <button>Awards</button>
-                <button>ERP</button>
-                <button>Contact Us</button>
-            </div>
-        </div>
 
-<style>
-div.mycontainer
-{
-	width:100%;
-	overflow:auto;
-}
-div.mycontainer div
-{
-width:30%;
-float:left;
-}
-div.mycontainer div {padding:25px}
-</style>
-<div class="mycontainer">
-
-    <div style="border-color:aquamarine;border-radius:10px;">
-        <h2 style="color:darkslategrey;text-align:center;"> About XYZ Trust </h2>
-        <p> XYZ Trust (XYZT) was established by Late Shri. S. Y. Patil in the year 1990 with a vision
-            to provide value added educational platform to society in multiple dimensions right from Nursery to Doctoral programs
-            in all professional streams enabling all our students to achieve Freedom through Education.. XYZT has seven institutes
-            Currently XYZCoE is one of the best engineering colleges in Pune.
-        </p>
-    </div>
-
-    <div>
-        <h2 style="color:darkslategrey;text-align:center;"> About College </h2>
-        <p> XYZ College of Engineering (XYZCoE) is one of the best engineering colleges in Pune, established in 1999,
-        nurtured and managed by XYZ Trust(XYZT).
-
-        XYZCoE is functioning proactively to provide the best professional environment to engineering and management students
-        in terms of academics, industry oriented trainings, sports, co-curricular & extracurricular activities, cultural
-        activities, various competitions, etc to create true aesthetically sensitive, socially committed and technologically
-        competent engineers and management professionals.
-        </p>
-        <p>Academics at XYZCoE is disciplined with results at the par of best colleges in Savitribai Phule Pune University (SPPU).
-        Students of XYZCoE are proving their talents at state and national level competitions for technical and non technical
-        events. Along with results XYZCoE has excellent placements.</p>
-    </div>
-
-    <div>
-        <h2 style="color:darkslategrey;text-align:center;"> Vision & Mission </h2>
-        <p>To be one of the top 100 Engineering Institutes of India in coming five years by offering exemplarily Ethical,
-        Sustainable and Value Added Quality Education through a matching ecosystem for building successful careers.</p>
-        <p>1. Serving the needs of the society at large through establishment of a state-of-art Engineering Institute
-
-            2. Imparting right Attitude, Skills, Knowledge for self-sustenance through Quality Education
-
-            3. Creating globally competent and Sensible engineers, researchers and entrepreneurs with an ability to think and act
-            independently in demanding situations</p>
-    </div>
-
-
-</div>
-<style>
     div.container1
     {
         width:100%;
@@ -131,8 +148,127 @@ div.mycontainer div {padding:25px}
     float:left;
     }
     div.container1 div {padding:25px}
-    </style>
 
+    .slidenew{
+        display: flex;
+
+    }
+    .news{
+        margin-right: 30px; 
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    .news img {
+        border-radius: 15px;
+    }
+
+    .containdiro{
+        margin-left: 60px;
+        margin-right: 60px;
+        border-radius: 25px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .containdiro img{
+        border-radius: 50%;
+    }
+
+    .recruiters{
+        background-image: url("Images/images2.jpg");
+    }
+    </style>
+    </head>
+
+
+<body style="background-color:azure;">
+    <div class="container0">
+        <div class="mycontainer1">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnand-aaRtpxUU2GC1Xrr6Uk8oVNhYZoXTrA&usqp=CAU" alt="XYZ Education Trust" width="125" height="125" class="topper">
+            </div>
+            <div>
+                <p><h1 style="color:blue;font-weight: 100; font-size: 24px; font-style: italic; text-align: center;"> XYZ EDUCATION TRUST's </h1>
+                    <h2 style="color:blue; font-weight:200; font-size:30px; text-align: center;"> XYZ College Of Engineering </h2>
+                </p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnand-aaRtpxUU2GC1Xrr6Uk8oVNhYZoXTrA&usqp=CAU" alt="XYZ Education Trust" width="125" height="125">
+            </div>
+        </div>
+        <div>
+            <h3 style="font-style:italic; text-align: center;"> NBA Accredited | NAAC Accredited with 'A' Grade | An Autonomous Institute | AICTE Approved | ISO 9001: 2015 Certified | Permanently Affiliated to SPPU,Pune</h3>
+        </div>
+    </div>    
+    
+    <div id="menu-button" style="width: 100%;">
+        <div style="border:2px solid black; border-radius:5px; background-color:rgb(241, 233, 233) ;font-size:25px;color:teal; padding:15px; display:flex ; justify-content:space-around;">
+            <button>HOME</button>
+            <button>AboutUs</button>
+            <button>Governance</button>
+            <button>Deans</button>
+            <button>Departments</button>
+            <button>Admissions</button>
+            <button>Placements</button>
+            <button>Exam Cell</button>
+            <button>Students Corner</button>
+            <button>Awards</button>
+            <button>ERP</button>
+            <button>Contact Us</button>
+        </div>
+    </div>
+
+        
+<div class="slidenew">
+    
+
+    <div id="slideshow">
+        <div class="slide-wrapper">
+                 
+                <!-- Define each of the slides
+             and write the content -->
+                <div class="slide">
+                    <img src="C:\Users\ROHIT\Downloads\IMG_20231221_174051.jpg" alt="uuu" height="450px" width="550px"></img>
+                    <h1 class="slide-number">
+                        SKYBLUE
+                    </h1> 
+                </div>
+                <div class="slide">
+                    <img src="file:///C:/Users/ROHIT/OneDrive/Desktop/SM/WebD ka maal/WEBD Mini Project/Images/images6.jpg" alt="uuu" height="450px" width="550px"></img>
+                    <h1 class="slide-number">
+                        A computer science portal
+                    </h1> 
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                        This is an example of 
+                    </h1> 
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                        Slideshow with HTML and CSS only
+                    </h1> 
+                </div>
+        </div>
+    </div>
+
+    <div class="news" style="background-color: rgb(180, 206, 209);border-style: hidden; border-radius: 15px;">
+        <img src="file:///C:/Users/ROHIT/OneDrive/Desktop/SM/WebD ka maal/WEBD Mini Project/Images/news and events.png" alt="news&events" height="60" width="275"></img>
+        <h1 style="text-align:center; font-size: 25px; font-weight: 120;">News and Events</h1>
+        <p>
+            <ul>
+                <li><a href="http://www.pccoepune.com/swartarang.php" target="_blank"><font size="5">Swartarang 2024</font></a> </li><br>
+
+                <li><a href="https://www.spectrumpccoe.tech/" target="_blank"><font size="5">Spectrum 2024</font></a> </li>
+            </ul>
+           
+
+
+            <a href="http://www.pccoepune.com/news-and-events.php" target="_blank"><font size="5">Read more...</font></a> 
+        </p>
+    </div>
+    
+</div>
+<br>
 <div class="container1">
     <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ6-zIbGM45rz385QuVuN-AWM_P2VmCBZr9Q&usqp=CAU" alt="infrastructure"  width="175px" height="150px">
         <h1 style="text-align: center;font-size: 20px; font-weight:100;">Infrastructure</h1>
@@ -154,16 +290,102 @@ div.mycontainer div {padding:25px}
     </div>
 </div>
 
+<div class="container2">
+<h1>XYZCoE AT GLANCE</h1>
+    
+    <div class="col-xs-12 col-sm-6 col-md-6 px-15 mb-30" text-align:="" center;="">	
+        <div class="gallery">
+            <a href="images/popup-gallery/10.jpeg" class="big"><img src="http://www.pccoepune.com/images/gallery/webp/10.webp" alt="Cloudy campus view of Pimpri Chinchwad College of Engineering" title="Cloudy campus view of Pimpri Chinchwad College of Engineering"></a>
+            <a href="images/popup-gallery/01.jpg"><img src="http://www.pccoepune.com/images/gallery/webp/01.webp" alt="Library at Pimpri Chinchwad College of Engineering" title="Library at Pimpri Chinchwad College of Engineering"></a>
+            <a href="images/popup-gallery/02.jpg"><img src="images/gallery/webp/02.webp" alt="LRT hall of PCCOE,Pune" title="LRT hall of PCCOE,Pune"></a>	
+            <a href="images/popup-gallery/03.jpg"><img src="images/gallery/webp/03.webp" alt="Computer Lab at Pimpri Chinchwad College of Engineering" title="Computer Lab at Pimpri Chinchwad College of Engineering"></a>
+            <div class="clear"></div>
+                
+            <a href="images/popup-gallery/05.jpg"><img src="images/gallery/webp/05.webp" alt="Vehicle design by Team Kratos of  PCCOE " title="Vehicle design by Team Kratos of  PCCOE "></a>
+            <a href="images/popup-gallery/06.jpg"><img src="images/gallery/webp/06.webp" alt="Vehicle design by Team Red Baron of PCCOE, Pune" title="Vehicle design by Team Red Baron of PCCOE, Pune"></a>
+            <a href="images/popup-gallery/04.jpg"><img src="images/gallery/webp/04.webp" alt="Greenery Campus at PCCOE" title="Greenery Campus at PCCOE"></a>
+            <a href="images/popup-gallery/12.JPG" class="big"><img src="images/gallery/webp/12.webp" alt="PCET’s PCCOE Swartarang 2K22's Annual Fest Celebrity Guest Mr.Lalit Prabhakar " title="PCCOE Swartarang 2K22's Annual Fest Celebrity Guest Mr.Lalit Prabhakar"></a>
+            <div class="clear"></div>
+            
+            <a href="images/popup-gallery/11.jpeg" class="big"><img src="images/gallery/webp/11.webp" alt="Top Engineering College in Pune, Maharashtra" title="Engineering College in Pune, Maharashtra"></a>
+            <a href="images/popup-gallery/07.JPG"><img src="images/gallery/webp/07.webp" alt="PCET’s PCCOE Swartarang 2K22's Annual Fest Celebrity Guest Tejaa Deokar" title="PCCOE Swartarang 2K22's Annual Fest Celebrity Guest Dr.Tejaa Deokar"></a>
+            <a href="images/popup-gallery/08.jpeg"><img src="images/gallery/webp/08.webp" alt="Adorable nature scene of PCCOE Campus in the morning time" title="Adorable nature scene of PCCOE Campus in the morning time"></a>
+            <a href="images/popup-gallery/09.jpg"><img src="images/gallery/webp/09.webp" alt="Swartarang 2020 at PCET’s PCCOE" title="Swartarang 2020 at PCET’s PCCOE"></a>
+            <div class="clear"></div>
+                
+            <a href="images/popup-gallery/14.jpg"><img src="images/gallery/webp/14.webp" alt="Team Red Baron of PCCOE" title="Team Red Baron of PCCOE"></a>
+            <a href="images/popup-gallery/15.jpg"><img src="images/gallery/webp/15.webp" alt="PCCOE TDE^x" title="PCCOE TDE^x"></a>
+            <a href="images/popup-gallery/16.jpg"><img src="images/gallery/webp/16.webp" alt="Convocation Ceremony at PCET’s PCCOE" title="Convocation Ceremony at PCET’s PCCOE"></a>
+            <a href="images/popup-gallery/13.jpg" class="big"><img src="images/gallery/webp/13.webp" alt="Pimpri Chinchwad Education Trust’s Institutes,Pune-Maharashtra " title="Pimpri Chinchwad Education Trust’s Institutes,Pune-Maharashtra"></a>
+            <div class="clear"></div>
+        </div>
+    </div>
 
-<ul type="circle">
-    <li style="color:cornflowerblue; font-size:35px;"> Applied Science & Humanities.</li>
-    <li style="color:cornflowerblue; font-size:35px;">Mechanical Engineering</li>
-    <li style="color:cornflowerblue; font-size:35px;">Electronics and Telecommunication Engineering</li>
-    <li style="color:cornflowerblue; font-size:35px;">Computer Engineering</li>
-    <li style="color:cornflowerblue; font-size:35px;">Information Technology Engineering</li>
-    <li style="color:cornflowerblue; font-size:35px;">Civil Engineering</li>
 
-</ul>
+</div>
+<br>
+<br>
+<div class="containdiro" style="border:3px solid black; background-color:rgb(226, 242, 245);">
+    <br>
+    <a> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQliyj8zcmm5MMdo5jAcJUEJ6vsYX_KMhep4Q&usqp=CAU" alt="Director" height="125px" width="125px"</a>
+    <h1 style="font-weight: 200;"><u>FROM DIRECTOR'S DESK</u></h1>
+    <p>The world of the 21st Century has become a global village owing to impact of globalization, liberalization and privatization.<br>
+                Today the corporate needs knowledge manpower and solution providers and not mere subject experts. This has created a dire need<br>
+                for budding technocrats to possess professional skills like critical and innovative thinking, problem solving attitude, communication<br>
+                skills, professional and social ethics besides technical expertise.<br>
+
+                The four pillar philosophy of PCCoE is very much in line to this changing industry, corporate and societal need and strongly<br>
+                focuses on Academic Excellence, Innovation & Research, Professional Competence and Social Commitment.</p>
+        <p>
+            <a href="http://www.pccoepune.com/director.php" target="_blank">Read more....</a>
+        </p>
+    </div>
+
+
+<div class="mycontainer" style="background-color: rgb(180, 206, 209);">
+
+    <div class="aboutcont" style="border:3px solid black; border-radius: 10px;background-color:azure;">
+        <h2 style="color:darkslategrey;text-align:center;"> About XYZ Trust </h2>
+        <p> XYZ Trust (XYZT) was established by Late Shri. S. Y. Patil in the year 1990 with a vision
+            to provide value added educational platform to society in multiple dimensions right from Nursery to Doctoral programs
+            in all professional streams enabling all our students to achieve Freedom through Education.. XYZT has seven institutes
+            Currently XYZCoE is one of the best engineering colleges in Pune.
+        </p>
+    </div>
+
+    <div class="aboutcont" style="border: 3px solid black; border-radius: 10px;background-color: azure;">
+        <h2 style="color:darkslategrey;text-align:center;"> About College </h2>
+        <p> XYZ College of Engineering (XYZCoE) is one of the best engineering colleges in Pune, established in 1999,
+        nurtured and managed by XYZ Trust(XYZT).
+
+        XYZCoE is functioning proactively to provide the best professional environment to engineering and management students
+        in terms of academics, industry oriented trainings, sports, co-curricular & extracurricular activities, cultural
+        activities, various competitions, etc to create true aesthetically sensitive, socially committed and technologically
+        competent engineers and management professionals.
+        </p>
+        <p>Academics at XYZCoE is disciplined with results at the par of best colleges in Savitribai Phule Pune University (SPPU).
+        Students of XYZCoE are proving their talents at state and national level competitions for technical and non technical
+        events. Along with results XYZCoE has excellent placements.</p>
+    </div>
+
+    <div class="aboutcont" style="border:3px solid black; border-radius: 10px;background-color: azure;">
+        <h2 style="color:darkslategrey;text-align:center;"> Vision & Mission </h2>
+        <p>To be one of the top 100 Engineering Institutes of India in coming five years by offering exemplarily Ethical,
+        Sustainable and Value Added Quality Education through a matching ecosystem for building successful careers.</p>
+        <p>1. Serving the needs of the society at large through establishment of a state-of-art Engineering Institute
+
+            2. Imparting right Attitude, Skills, Knowledge for self-sustenance through Quality Education
+
+            3. Creating globally competent and Sensible engineers, researchers and entrepreneurs with an ability to think and act
+            independently in demanding situations</p>
+    </div>
+
+</div>
+
+<div class="recruiters">
+
+
+</div>
 
 </body>
 </html>
