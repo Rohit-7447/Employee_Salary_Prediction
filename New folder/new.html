@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ min-height:100vh;
+ background:linear-gradient(45deg, #f09433, #ff5acd);
+}
+.card{
+  width:320px;
+  height:190px;
+  position:relative;
+  background:#fff;
+  border-radius:20px;
+  transition:0.5s;
+   box-shadow:0px 15px 50px rgba(0,0,0,.35);
+}
+.card:hover{
+    height:350px;
+}
+.card .imgbox{
+    width:130px;
+    height:130px;
+    position:absolute;
+    top:-30%;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0px 15px 50px rgba(0,0,0,.35);
+    transition:0.5s;
+}
+.card:hover .imgbox 
+{
+    width:170px;
+    height:170px;
+}
+.imgbox img{
+     width:100%;
+     height:100%;
+     border-radius:50%;
+}
+.card .content{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    overflow:hidden;
+}
+.card .content .details{
+   padding:20px;
+   padding-bottom:30px;
+   text-align:center;
+   width:100%;
+   transition:0.5s;
+   transform:translateY(150px);
+}
+.card:hover .content .details
+{
+      transform:translateY(0px);
+}
+.card .content .details h2
+{
+ font-size:1.25em;
+ font-weight:600;
+ color:#555;
+ line-height:1.2em;
+}
+.card .content .details h2 span
+{
+    font-size:0.75em;
+    font-weight:500;
+ opacity:0.5;
+}
+.card .content .details .data
+{
+display:flex;
+justify-content:space-between;
+   margin:20px 0;
+}
+.card .content .details .data h3
+{
+ font-size:1em;
+ color:#555;
+ line-height:1.2em;
+ font-weight:600;
+}
+.card .content .details .data h3 span 
+{
+ font-size:0.85em;
+ font-weight:400;
+ opacity:0.5;
+}
+.card .content .details .btn
+{
+ display:flex;
+ justify-content:space-between;
+ gap:20px;
+}
+.card .content .details .btn button
+{
+ padding:10px 35px;
+ border-radius:5px;
+ border:none;
+ outline:none;
+ font-size:1em;
+ font-weight:500;
+ background:#ff5f95;
+ color:#fff;
+}
+</style>
+</head>
+<body>
+    <div class="cardbox">
+<div class="card">
+<div class="imgbox">
+<img src="C:\Users\ROHIT\OneDrive\Desktop\SM\WebD\WEBD Mini Project\Images\pccoe-logo-new.webp">
+</div>
+
+<div class="content">
+<div class="details">
+<h1><font size="4">IT DEPARTMENT</font><br><span><font size="3">Information Technology Department at Pccoe is commited to quality technical education.</font></span></font></h1>
+<div class="data">
+    <div class="btn">
+    <a class="hyperlink" href="https://it.pccoepune.com/about">
+        <button>Know More</button>
+    </a>
+    </div>
+</div> 
+</div>
+</div>
+
+<div class="card1">
+    <div class="imgbox">
+    <img src="C:\Users\ROHIT\OneDrive\Desktop\SM\WebD\WEBD Mini Project\Images\pccoe-logo-new.webp">
+    </div>
+    
+    <div class="content">
+    <div class="details">
+    <h1><font size="4">IT DEPARTMENT</font><br><span><font size="3">Information Technology Department at Pccoe is commited to quality technical education.</font></span></font></h1>
+    <div class="data">
+        <div class="btn">
+        <a class="hyperlink" href="https://it.pccoepune.com/about">
+            <button>Know More</button>
+        </a>
+        </div>
+    </div> 
+</div>
+</div> 
+</div>
+</div>
+</body>
+</html>

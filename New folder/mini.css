@@ -1,0 +1,278 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;        
+    text-align: center;
+}
+button {
+    background-color: rgb(241, 233, 233);
+    border:#ccc solid 0.5px;
+    border-radius: 5px;
+    color: teal;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration:skyblue;
+    display: inline-block;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px #d1d0d0;
+}
+/* Styling the area of the slides */
+
+#slideshow {
+overflow: hidden;
+height: 550px;
+width: 1128px;
+padding-top: 15px;
+
+margin: 0 auto;
+}
+
+/* Style each of the sides 
+with a fixed width and height */
+
+.slide {
+float: left;
+height: 550px;
+width: 1128px;
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+ 
+/* Calculate the total width on the
+basis of number of slides */
+width: calc(1128px * 4);
+ 
+/* Specify the animation with the
+duration and speed */
+animation: slide 10s ease infinite;
+}
+
+/* Set the background color
+of each of the slides */
+
+.slide:nth-child(1) {
+background: green;
+background-image:url(Images/campustree.jpg);
+}
+
+.slide:nth-child(2) {
+background: pink;
+background-image: url(Images/campus\ img.jpg);
+}
+
+.slide:nth-child(3) {
+background: red;
+background-image: url(Images/campusbuilding1.jpg);
+}
+
+.slide:nth-child(4) {
+background: yellow;
+background-image: url(Images/campusbuilding2.jpg);
+}
+
+/* Define the animation 
+for the slideshow */
+
+@keyframes slide {
+ 
+/* Calculate the margin-left for 
+each of the slides */
+20% {
+    margin-left: 0px;
+}
+40% {
+    margin-left: calc(-1128px * 1);
+}
+60% {
+    margin-left: calc(-1128px * 2);
+}
+80% {
+    margin-left: calc(-1128px * 3);
+}
+}
+
+div.mycontainer
+{
+    width:100%;
+    overflow:auto;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.mycontainer div
+{
+width:25%;
+float:left;
+
+}
+div.mycontainer div {padding:25px}
+div.mycontainer {
+    border: 2px dashed black;
+    border-radius: 20px;
+}
+.feature-card1{
+    box-shadow: 2px 2px 4px #ccc;
+    width: 33%;
+    padding: 60px 30px;
+    text-align: justify;
+    margin: 0 12px;
+  }
+  
+  .feature-card1-heading{
+    margin-top: 0px;
+    font-size: 22px;
+    color: #1e1e1e;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+  
+  .feature-card1-desc {
+    font-size: 15px;
+    line-height: 25px;
+    color: #888;
+    font-weight: 400;
+  }
+  
+  .feature-card1-btn {
+    background-color: #f4813f;
+  }
+
+div.mycontainer1
+    {
+        width:100%;
+        overflow:auto;
+        display:flex;
+        justify-content: space-around;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    div.mycontainer1 div
+    {
+    width:29%;
+    float:left;
+    }
+    div.mycontainer1 div {padding:25px}
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+div.container1
+{
+width:100%;
+overflow:auto;
+}
+div.container1 div
+{
+width:13%;
+float:left;
+}
+div.container1 div {padding:25px}
+
+.slidenew{
+display: flex;
+
+}
+.news{
+margin-right: 30px; 
+margin-top: 55px;
+margin-bottom: 55px;
+}
+.news img {
+border:#888 solid 0.5px;
+border-radius: 15px;
+}
+
+.containdiro{
+margin-left: 60px;
+margin-right: 60px;
+border-radius: 25px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+.containdiro img{
+border-radius: 50%;
+}
+.containdirojr{
+    width:65%;
+    margin-left: 260px;
+    text-align: center;
+}
+.recruiters{
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Ssf5Ws3t9XsJqBUPEFm7b8yl7IuMT1wDoQ&s");
+background-size: contain;
+height: 350px;
+width: 100%;
+justify-content: space-around;
+}
+
+.gallery {
+width: 100%;
+overflow: auto;
+display:flex;
+
+
+}
+.clearfix{
+font-size: 13px; background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+display: flex;    
+}
+.clearfix1{
+padding-left: 10px;
+width: 50%;
+text-align: center;
+}
+.clearfix2{
+width: 50%;
+text-align: center;
+}
+.container_new{
+background-color:#6af2fbf8;
+display: flex;
+}
+.row_new{
+width:100%;
+overflow:auto;
+display:flex;
+justify-content: space-around;
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 10px;
+padding-right: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.container_new1{
+background-color:#6af2fbf8;
+}
+.row_new1{
+width: 65%;
+height: 40px;
+background-color:#191a20;
+color: aliceblue;
+display: flex;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+margin-left: 250px;
+}
+
+.useful-links{
+margin-left:150px;
+text-align: center;
+}
+
+.images6{
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.images6:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+  

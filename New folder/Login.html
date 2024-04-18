@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #080710;
+  }
+  
+  #logo {
+    color: #191a20;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  #topbar {
+    width: calc(100% - 104px);
+    box-shadow: 0px 2px 8px #ccc;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+    
+    /* position: fixed;
+   */
+    padding: 20px 52px;
+  /*   box-sizing: border-box; */
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-item {
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a7a7a;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0px 12px;
+  }
+  
+  .menu-item:hover {
+    color: #fba70b;
+  }
+  
+  #main-heading {
+    font-size: 52px;
+    color: #191a20;
+    font-weight: 900;
+  }
+  
+  #txt-create {
+    color: #fba70b;
+  }
+  .clearfix{
+  width: 100%;
+  font-size: 13px; 
+  background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  display: flex;    
+  position: absolute;
+  bottom: 0px;
+}
+.clearfix1{
+color: #000;
+  padding-left: 10px;
+  width: 50%;
+  text-align: center;
+}
+.clearfix2{
+  color: #000;
+  width: 50%;
+  text-align: center;
+}
+.container0{
+  /* position:absolute;
+  top: 75px; */
+  overflow:auto;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 650px;
+}
+.background{
+width: 430px;
+height: 520px;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+}
+.background .shape{
+height: 200px;
+width: 200px;
+position: absolute;
+border-radius: 50%;
+}
+.shape:first-child{
+background: linear-gradient(
+    #1845ad,
+    #23a2f6
+);
+left: 280px;
+top: -10px;
+}
+.shape:last-child{
+background: linear-gradient(
+    to right,
+    #ff512f,
+    #f09819
+);
+right: -500px;
+bottom: -80px;
+}
+form{
+height: 480px;
+width: 400px;
+background-color: rgba(255,255,255,0.13);
+/* position: absolute; */
+/* transform: translate(-50%,-50%); */
+top: 50%;
+left: 50%;
+border-radius: 10px;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+padding: 50px 35px;
+}
+form *{
+font-family: 'Poppins',sans-serif;
+color: #ffffff;
+letter-spacing: 0.5px;
+outline: none;
+border: none;
+}
+form h3{
+font-size: 32px;
+font-weight: 500;
+line-height: 42px;
+text-align: center;
+}
+
+label{
+display: block;
+margin-top: 30px;
+font-size: 16px;
+font-weight: 500;
+}
+input{
+display: block;
+height: 50px;
+width: 100%;
+background-color: rgba(255,255,255,0.07);
+border-radius: 3px;
+padding: 0 10px;
+margin-top: 8px;
+font-size: 14px;
+font-weight: 300;
+}
+::placeholder{
+color: #e5e5e5;
+}
+button{
+margin-top: 50px;
+width: 100%;
+background-color: #ffffff;
+color: #080710;
+padding: 15px 0;
+font-size: 18px;
+font-weight: 600;
+border-radius: 5px;
+cursor: pointer;
+}
+.social{
+margin-top: 30px;
+display: flex;
+}
+.social div{
+background: red;
+width: 150px;
+border-radius: 3px;
+padding: 5px 10px 10px 5px;
+background-color: rgba(255,255,255,0.27);
+color: #eaf0fb;
+text-align: center;
+}
+.social div:hover{
+background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+margin-left: 25px;
+}
+.social i{
+margin-right: 4px;
+}
+
+</style>
+</head>
+<body>
+
+
+  <div id="topbar">
+    <p id="logo">DEPARTMENT OF INFORMATION TECHNOLOGY ENGINEERING PCCOE</p>
+    <div>
+      <a class="menu-item" href="index.html">HOME</a>
+      <a class="menu-item" href="WEBD Mini Project.html">PCCOE</a>
+      <a class="menu-item" href="contact us.html">CONTACT US</a>
+    </div>
+  </div>
+
+<div class="container0">
+  <div class="gif" style="border:#000 solid 1px; border-radius:50%; display: flex; justify-content: center; align-items: center;">
+    <img src="Images/Mel15_anim2.gif" alt="magic-space">
+  </div>
+  <div class="container" style="display: flex; justify-content: center; align-items: center;">
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form>
+    <h3>ERP Login</h3>
+
+    <label for="username">PRN</label>
+    <input type="text" placeholder="PRN" id="username">
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password">
+
+    <button>Log In</button>
+    <div class="social">
+      <div class="go"><i class="fab fa-google"></i> Need Help?</div>
+      <div class="fb"><i class="fab fa-facebook"></i>Forget Password?</div>
+    </div>
+</form>
+</div>
+</div>
+
+<footer>
+<div class="clearfix" style="font-size: 13px; background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);">
+  <div class="clearfix1">Copyright © 2024 Pimpri Chinchwad College of Engineering (PCCOE)</div>
+  <div class="clearfix2">Designed & Developed by Rohit Kolate & Avishkar Mane, FY(IT)</div>
+</div></footer>
+
+</body>
+</html>
